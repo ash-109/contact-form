@@ -28,11 +28,63 @@ body{
     font-family: 'Karla';
 }
 form{
-    padding: 20px;
+    padding: 30px;
     background: var(--White);
     border-radius: 12px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.asterisk{
+    color: var(--Green);
+}
+.identity{
+    display: flex;
+    gap: 1.3rem;
+}
+.identity > div{
+    display: flex;
+    flex-direction: column;
+gap: 0.5rem;
+width: 50%;
+}
+.email>div{
+display: flex;
+flex-direction: column;
+}
+.query-type>div{
+    display: flex;
+    gap: 16px;
+}
+.query-type-options>div{
+ display: flex; 
+ align-items: center;
+}
+input{
+    padding: 10px;
+    border-radius: 8px;
+}
+textarea{
+    width: 100%;
+    border-radius: 8px;
+
+}
+input[type="submit"] {
+    background: var(--Green);
+    color: var(--White);
+    font-weight: 700;
+    font-size: 0.9rem;
+    border: none;
+    width: 100%;
+    padding: 10px;
 }
 
+
+input[type="submit"]:hover{
+    background: var(--Dark-Grey);
+    cursor: pointer;
+}
 
 /* .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); } */

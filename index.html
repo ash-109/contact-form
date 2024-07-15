@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,44 +10,64 @@
   <title>Contact form - FrontendMentor</title>
 
 </head>
+
 <body>
 
   <form action="">
     <h2>Contact Us</h2>
-    <div class="identity">
-<label for="firstName">First Name&#42;</label>
-<input type="text" name="firstName" id="firstName" required>
 
-<label for="lastName">Last Name &#42;</label>
-<input type="text" name="lastName" id="lastName" required>
-</div>
-<div class="email">
-  <label for="Email Adresse">Email Adresse &#42;</label>
-  <input type="email" name="" id="" required>
-</div>
-<div class="query-type">
-  
-  <label for="queryType"> Query Type &#42;</label> <br>
+
+    <div class="identity">
+
+      <div class="firstName">
+        <label for="firstName">First Name <span class="asterisk">*</span> </label>
+        <input type="text" name="firstName" id="firstName" required>
+      </div>
+
+      <div class="lastName">
+        <label for="lastName">Last Name <span class="asterisk">*</span> </label>
+        <input type="text" name="lastName" id="lastName" required>
+      </div>
+
+    </div>
+
+
+    <div class="email">
+
+      <div>
+        <label for="Email Adresse">Email Adresse  <span class="asterisk">*</span> </label>
+        <input type="email" name="" id="" required>
+      </div>
+
+    </div>
+
+
+    <div class="query-type">
+
+      <p> Query Type <span class="asterisk">*</span> </p>
+      <div class="query-type-options">
+<div>       <input type="radio" name="queryType" id="generalEnquiry">
+        <label for="generalEnquiry"> General Enquiry</label>
+</div> 
 <div>
-  <input type="radio" name="queryType" id="queryType">
-  <label for="queryType"> Query Type</label> <br>
-</div>
-<div>
-  <input type="radio" name="queryType" id="queryType"> <label for="">Support Request</label>
-  </div>
-  <div>
-    <label for="message">Message &#42;</label><br>
-    <textarea name="message" id="message" required></textarea>
-  </div>
-  <div>
-  <input type="checkbox" name="consent" id="consent"> <label for="consent"> I consent to being contacted by the team*
-  </label>
-</div>
-  <input type="submit" value="Submit">
-</div>
+        <input type="radio" name="queryType" id="supportRequest">
+        <label for="supportRequest">Support Request</label>
+      </div></div>
+    </div>
+    <div class="message_area">
+      <label for="message">Message <span class="asterisk">*</span> </label><br>
+      <textarea name="message" id="message" required rows="5"></textarea>
+    </div>
+    <div>
+      <input type="checkbox" name="consent" id="consent"> <label for="consent"> I consent to being contacted by the
+        team <span class="asterisk">*</span> 
+      </label>
+    </div>
+    <input type="submit" value="Submit">
+    </div>
 
   </form>
-<!-- 
+  <!-- 
   
 
   First Name
@@ -74,10 +95,11 @@
 
   Message Sent!
   Thanks for completing the form. We'll be in touch soon! -->
-  
+
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 </body>
+
 </html>
