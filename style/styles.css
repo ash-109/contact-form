@@ -42,12 +42,14 @@ form{
 .identity{
     display: flex;
     gap: 1.3rem;
+    width: 100%;
 }
 .identity > div{
-    display: flex;
-    flex-direction: column;
-gap: 0.5rem;
 width: 50%;
+}
+
+.firstName input, .lastName input{
+width: 100%;
 }
 .email>div{
 display: flex;
@@ -84,6 +86,10 @@ input[type="submit"] {
 input[type="submit"]:hover{
     background: var(--Dark-Grey);
     cursor: pointer;
+}
+.error{
+    border: red 1px solid;
+    color: red;
 }
 
 /* .attribution { font-size: 11px; text-align: center; }
