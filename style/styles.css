@@ -48,30 +48,38 @@ form{
 width: 50%;
 }
 
-.firstName input, .lastName input{
+.firstName input, .lastName input, .email input,textarea{
 width: 100%;
+border-radius: 8px;
 }
-.email>div{
-display: flex;
-flex-direction: column;
-}
+
 .query-type>div{
     display: flex;
     gap: 16px;
 }
-.query-type-options>div{
+.query-type-options>div{   
+     border: 1px solid var(--Dark-Grey);
  display: flex; 
  align-items: center;
+ padding: 10px;
+ width: 100%;
+ gap: 0.75rem;
+ border-radius: 8px;
+}
+.radio-large {
+    transform: scale(1.4);
+    margin-left: 10px;
+
 }
 input{
     padding: 10px;
-    border-radius: 8px;
+    border: 1px solid var(--Dark-Grey);
 }
-textarea{
-    width: 100%;
-    border-radius: 8px;
+input:hover, textarea:hover{
+border: 1px solid var(--Green);
+cursor: pointer;
+}
 
-}
 input[type="submit"] {
     background: var(--Green);
     color: var(--White);
