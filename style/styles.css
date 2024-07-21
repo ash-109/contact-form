@@ -20,6 +20,7 @@
 }
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: var(--Light-Green);
@@ -120,6 +121,14 @@ input[type="submit"]:hover{
     border: red 1px solid;
     color: red;
 }
-
+.success_message{
+    background: var(--Dark-Grey);
+    padding: 20px 30px;
+    color: var(--White);
+}
+strong{
+    display: flex;
+    gap: 8px;
+}
 /* .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); } */
