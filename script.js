@@ -27,7 +27,7 @@ let successMessagePopUp = document.getElementById("success_message");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let firstNameValue= firstName.value
-  if (firstNameValue === "") {    console.log('ok');
+  if (firstNameValue === "") {    console.log('This field is required');
 
   }
   else{    
@@ -41,7 +41,9 @@ form.addEventListener("submit", (e) => {
 
 
 // ------ REGEX ------
-const regexText = /^([A-Za-z])\w+$/;
+const regexText = /^[A-Za-z-\w]+$/;
+let myName="Jean-Paul"
+console.log(regexText.test(myName));
 
 
 let emailAdress = email.value
